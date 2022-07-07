@@ -45,15 +45,15 @@ static struct msm_platform_core_capability core_data_waipio[] = {
 	/* {type, value} */
 	{ENC_CODECS, H264|HEVC|HEIC},
 	{DEC_CODECS, H264|HEVC|VP9|HEIC},
-	{MAX_SESSION_COUNT, 16},
-	{MAX_NUM_720P_SESSIONS, 16},
-	{MAX_NUM_1080P_SESSIONS, 8},
-	{MAX_NUM_4K_SESSIONS, 4},
-	{MAX_NUM_8K_SESSIONS, 2},
+	{MAX_SESSION_COUNT, 18},
+	{MAX_NUM_720P_SESSIONS, 18},
+	{MAX_NUM_1080P_SESSIONS, 9},
+	{MAX_NUM_4K_SESSIONS, 6},
+	{MAX_NUM_8K_SESSIONS, 3},
 	{MAX_SECURE_SESSION_COUNT, 3},
-	{MAX_RT_MBPF, 173056},	/* (8192x4320)/256 + (4096x2176)/256*/
+	{MAX_RT_MBPF, 269196},	/* (8192x4320)/256 + (4096x2176)/256*/
 	{MAX_MBPF, 276480}, /* ((8192x4320)/256) * 2 */
-	{MAX_MBPS, 7833600},	/* max_load
+	{MAX_MBPS, 9180540},	/* max_load
 					 * 7680x4320@60fps or 3840x2176@240fps
 					 * which is greater than 4096x2176@120fps,
 					 * 8192x4320@48fps
